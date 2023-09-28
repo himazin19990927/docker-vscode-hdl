@@ -1,0 +1,24 @@
+{
+	"name": "HDL Development",
+	"build": {
+		"context": "..",
+		"dockerfile": "../Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mshr-h.veriloghdl",
+				"kaiwood.center-editor-window",
+				"oderwat.indent-rainbow"
+			],
+			"settings": {
+				"verilog.formatting.verilogHDL.formatter": "verible-verilog-format",
+				"verilog.languageServer.veribleVerilogLs.enabled": true,
+				"verilog.linting.iverilog.arguments": "-y ./",
+				"terminal.integrated.env.linux": {
+					"DISPLAY": "host.docker.internal:0.0"
+				}
+			}
+		}
+	}
+}
