@@ -15,6 +15,10 @@
 				"verilog.formatting.verilogHDL.formatter": "verible-verilog-format",
 				"verilog.languageServer.veribleVerilogLs.enabled": true,
 				"verilog.linting.iverilog.arguments": "-y ./",
+				"[systemverilog]": {
+					"editor.tabSize": 2,
+					"editor.insertSpaces": true
+				},
 				"terminal.integrated.env.linux": {
 					"DISPLAY": "host.docker.internal:0.0"
 				}
